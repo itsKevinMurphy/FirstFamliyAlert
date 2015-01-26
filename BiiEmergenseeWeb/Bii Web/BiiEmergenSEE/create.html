@@ -1,0 +1,448 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+    <title>Create First Family Alert plan</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/adminEmer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+     
+   
+
+    <!--Google Search Box Api link-->
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=places"></script>
+    <script>
+        // This example adds a search box to a map, using the Google Place Autocomplete
+        // feature. People can enter geographical searches. The search box will return a
+        // pick list containing a mix of places and predicted search terms.
+
+        function initialize() {
+
+            var markers = [];
+            var map = new google.maps.Map(document.getElementById('map-canvas'), {
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+
+            var defaultBounds = new google.maps.LatLngBounds(
+                new google.maps.LatLng(-33.8902, 151.1759),
+                new google.maps.LatLng(-33.8474, 151.2631));
+            map.fitBounds(defaultBounds);
+
+            // Create the search box and link it to the UI element.
+            var input = /** @type {HTMLInputElement} */(
+                document.getElementById('pac-input'));
+            map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+            var searchBox = new google.maps.places.SearchBox(
+              /** @type {HTMLInputElement} */(input));
+
+            // [START region_getplaces]
+            // Listen for the event fired when the user selects an item from the
+            // pick list. Retrieve the matching places for that item.
+            google.maps.event.addListener(searchBox, 'places_changed', function () {
+                var places = searchBox.getPlaces();
+
+                if (places.length == 0) {
+                    return;
+                }
+                for (var i = 0, marker; marker = markers[i]; i++) {
+                    marker.setMap(null);
+                }
+
+                // For each place, get the icon, place name, and location.
+                markers = [];
+                var bounds = new google.maps.LatLngBounds();
+                for (var i = 0, place; place = places[i]; i++) {
+                    var image = {
+                        url: place.icon,
+                        size: new google.maps.Size(71, 71),
+                        origin: new google.maps.Point(0, 0),
+                        anchor: new google.maps.Point(17, 34),
+                        scaledSize: new google.maps.Size(25, 25)
+                    };
+
+                    // Create a marker for each place.
+                    var marker = new google.maps.Marker({
+                        map: map,
+                        icon: image,
+                        title: place.name,
+                        position: place.geometry.location
+                    });
+
+                    markers.push(marker);
+
+                    bounds.extend(place.geometry.location);
+                }
+
+                map.fitBounds(bounds);
+            });
+            // [END region_getplaces]
+
+            // Bias the SearchBox results towards places that are within the bounds of the
+            // current map's viewport.
+            google.maps.event.addListener(map, 'bounds_changed', function () {
+                var bounds = map.getBounds();
+                searchBox.setBounds(bounds);
+            });
+        }
+
+        google.maps.event.addDomListener(window, 'load', initialize);
+
+    </script>
+
+    <!-- Google Search Box and Map Ends-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!----------------------------------------Top Navigation Bar------------------------------------------------------------->
+        <!----------------------------------------Top Navigation Bar------------------------------------------------------------->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mom <i>(Admin)</i></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Daughter</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>10 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Hi Mommy! That's suuuuuuuuuper annoying! Thanks for letting me know and making me a overnight bag. I'll see you at grandmas house after schoool!!! LOVE YA MOMMY!!!!!!!! OXOXOXOXOXOOXOX</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Husband</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>12 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Thanks for the heads up about the Power outtage, on My way to Mom's now.</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Grandma</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>13 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Sorry to hear the storm knoocked out your power!! Please bring the family over to stay with me for as long as you need, I am happy to help</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="messages.html">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Message
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Stories
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Friend Added
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Uploaded File
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            <!----------------------------------------Side Navigation Bar------------------------------------------------------------->
+            <!----------------------------------------Side Navigation Bar------------------------------------------------------------->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="launch.html"><i class="fa fa-support fa"></i> Launch First Family Alert</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Messages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="messages.html">Family</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Friends</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Professional</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Government</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a href="circles.html"><i class="fa fa-table fa-fw"></i> Add to and Edit Circles</a>
+                        </li>
+                        <li>
+                            <a class="active" href="create.html"><i class="fa fa-edit fa-fw"></i> Create First Family Alert Plan</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+<!-------------------------------------------Content Starts-------------------------------------------------------->
+<!-------------------------------------------Content Starts-------------------------------------------------------->
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <br/>
+                    <br />
+                    <h1 class="page-header">Create First Family Alert Plan</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            Create Your Plan
+                        </div>
+
+                        <div class="panel-body">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <form role="form">
+                                        <div class="form-group">
+                                            <label>Emergency Header</label>
+                                            <input class="form-control">
+                                            <p class="help-block">Example There has been A fire</p>
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label>Emergency Detail</label>
+                                            <textarea class="form-control" rows="3"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>My Circles To Include</label>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Family
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Extended Family
+                                                </label>
+                                            </div>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">Friends
+                                                </label>
+                                            </div>
+                                        </div>
+                                        
+                                       
+
+                                        <!--Creates Google Search Box-->
+
+                                    
+                                            <input id="pac-input" class="controls" type="text" placeholder="Meeting Spot">
+                                       
+                                        <div id="map-canvas">
+
+                                        </div>
+                                          
+                                      
+                                        <button id="btnCreateEmer" type="submit" class="btn btn-default">Submit Button</button>
+                                        <button id="btnCreateEmer" type="reset" class="btn btn-default">Reset Button</button>
+                                    </form>
+                                </div>
+                               </div> 
+                            </div>
+                        </div>
+                    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+ <?php
+$formatted_number
+?>

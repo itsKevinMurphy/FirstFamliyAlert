@@ -1,0 +1,1057 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>First Family Alert - Update and View Circles</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="css/plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/adminEmer.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <!----------------------------------------Top Navigation Bar------------------------------------------------------------->
+        <!----------------------------------------Top Navigation Bar------------------------------------------------------------->
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Mom <i>(Admin)</i></a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-envelope fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-messages">
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Daughter</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>10 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Hi Mommy! That's suuuuuuuuuper annoying! Thanks for letting me know and making me a overnight bag. I'll see you at grandmas house after schoool!!! LOVE YA MOMMY!!!!!!!! OXOXOXOXOXOOXOX</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Husband</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>12 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Thanks for the heads up about the Power outtage, on My way to Mom's now.</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <strong>Grandma</strong>
+                                    <span class="pull-right text-muted">
+                                        <em>13 Mins Ago</em>
+                                    </span>
+                                </div>
+                                <div>Sorry to hear the storm knoocked out your power!! Please bring the family over to stay with me for as long as you need, I am happy to help</div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="messages.html">
+                                <strong>Read All Messages</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-messages -->
+                </li>
+
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-bell fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-alerts">
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <i class="fa fa-comment fa-fw"></i> New Message
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-twitter fa-fw"></i> 3 New Stories
+                                    <span class="pull-right text-muted small">12 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="messages.html">
+                                <div>
+                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-tasks fa-fw"></i> New Friend Added
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#">
+                                <div>
+                                    <i class="fa fa-upload fa-fw"></i> Uploaded File
+                                    <span class="pull-right text-muted small">4 minutes ago</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a class="text-center" href="#">
+                                <strong>See All Alerts</strong>
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-alerts -->
+                </li>
+                <!-- /.dropdown -->
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-user">
+                        <li>
+                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        </li>
+                    </ul>
+                    <!-- /.dropdown-user -->
+                </li>
+                <!-- /.dropdown -->
+            </ul>
+            <!-- /.navbar-top-links -->
+            <!----------------------------------------Side Navigation Bar------------------------------------------------------------->
+            <!----------------------------------------Side Navigation Bar------------------------------------------------------------->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li class="sidebar-search">
+                            <div class="input-group custom-search-form">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                            <!-- /input-group -->
+                        </li>
+                        <li>
+                            <a href="dashboard.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                        </li>
+                        <li>
+                            <a href="launch.html"><i class="fa fa-support fa"></i> Launch First Family Alert</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-envelope fa-fw"></i> Messages<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="messages.html">Family</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Friends</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Professional</a>
+                                </li>
+                                <li>
+                                    <a href="messages.html">Government</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a class="active" href="circles.html"><i class="fa fa-table fa-fw"></i> Add to and Edit Circles</a>
+                        </li>
+                        <li>
+                            <a href="create.html"><i class="fa fa-edit fa-fw"></i> Create First Family Alert Plan</a>
+                        </li>
+
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Second Level Item</a>
+                                </li>
+                                <li>
+                                    <a href="#">Third Level <span class="fa arrow"></span></a>
+                                    <ul class="nav nav-third-level">
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Third Level Item</a>
+                                        </li>
+                                    </ul>
+                                    <!-- /.nav-third-level -->
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-------------------------------------------Content Starts-------------------------------------------------------->
+        <!-------------------------------------------Content Starts-------------------------------------------------------->
+
+        <div id="page-wrapper">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <br />
+                    <br />
+                    <h1 class="page-header">Add, Edit and View your Circles</h1>
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Family Circle - Your Immediate Family
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Name</th>
+                                                <th>Username</th>
+                                                <th>Phone</th>
+                                                <th>E-Mail</th>
+                                                <th>Date of Birth</th>
+                                                <th>Gender</th>
+                                                <th>Blood Type</th>
+                                                <th>Allergies</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Kevin Murphy</td>
+                                                <td>KevinMurphy</td>
+                                                <td>647-688-4347</td>
+                                                <td>itsKevinMurphy@gmail.com</td>
+                                                <td>13/11/1983</td>                                                
+                                                <td>Male&nbsp;<input id="Male" name="gender" type="radio"  />Female&nbsp;<input id="Female" name="gender" type="radio" /></td>
+                                                <td>A</td>
+                                                <td>None</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Yonas Tecle</td>
+                                                <td>YonasTecle</td>
+                                                <td>647-555-555</td>
+                                                <td>YonasTecle@gmail.com</td>
+                                                <td>30/06/1982</td>
+                                                <td>Male&nbsp;<input id="Male" name="gender1" type="radio" />Female&nbsp;<input id="Female" name="gender1" type="radio" /></td>
+                                                <td>A</td>
+                                                <td>Punks</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Sean Murphy</td>
+                                                <td>Seano</td>
+                                                <td>647-495-5094</td>
+                                                <td>StartRenovations@gmail.com</td>
+                                                <td>05/09/1953</td>
+                                                <td>Male&nbsp;<input id="Male" name="gender2" type="radio" />Female&nbsp;<input id="Female" name="gender2" type="radio" /></td>
+                                                <td>0</td>
+                                                <td>Penicillin</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td><input class="FamilyInput" id="Name" type="text" /></td>
+                                                <td><input class="FamilyInput" id=" username" type="text" /></td>
+                                                <td><input class="FamilyInput" id="Phone" type="text" /></td>
+                                                <td><input class="FamilyInput" id="Email" type="text" /></td>
+                                                <td><input class="FamilyInput" id="DOB" type="text" /></td>
+                                                <td>Male&nbsp;<input id="Male" name="gender2" type="radio" />Female&nbsp;<input id="Female" name="gender2" type="radio" /></td>
+                                                <td><input class="FamilyInput" id="Blood" type="text" /></td>
+                                                <td><input class="FamilyInput" id="Allergies" type="text" /></td>
+                                            </tr>
+                                            <tr>
+                                                <td></td>
+                                                <td><input id="Add" class="FamilyInput" type="button" value="Add" /></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Your First Family Alert Contacts
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>E-Mail</th>
+                                                <th>Mobile Phone</th>
+                                                <th>Home Phone</th>
+                                                <th>Family Circle</th>
+                                                <th>Extended Family Circle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="gradeA">
+                                                <td>Kevin Murphy</td>
+                                                <td>itsKevinMurphy@gmail.com</td>
+                                                <td>647-688-4347</td>
+                                                <td>647-688-4347</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Yvonne Murphy</td>
+                                                <td>VonneTron3000@gmail.com</td>
+                                                <td>647-456-1234</td>
+                                                <td>416-544-2444</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Nicole Murphy</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="even gradeC">
+                                                <td>Yonas Tecle</td>
+                                                <td>YonasTecle@gmail.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="odd gradeA">
+                                                <td>Mohammed Khan</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="even gradeA">
+                                                <td>Grandma</td>
+                                                <td>Grandma@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Poppa</td>
+                                                <td>Poppa@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Terrence VanHorne</td>
+                                                <td>TerryV@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Scotty McMahon</td>
+                                                <td>McMahonS@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Angela McMahon</td>
+                                                <td>AngieM@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeU">
+                                                <td>John Smith</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>John Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jane Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeU">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeX">
+                                                <td>Jason Doe</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeU">
+                                                <td>Jeremy Doner</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeU">
+                                                <td>Jessica Doner</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Shawna Doner</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Tyrese Doner</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Mary Contrary</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Harry Contrary</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Jerry Contrary</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Marcus Contrary</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Mary Contrary</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Herold Watson</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Elisha Watson</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Marsha Watson</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Leroy Watson</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td>Merigold Watson</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Michael Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Michelle Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Sherry Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Sandra Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Tyler Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                            <tr class="gradeC">
+                                                <td>Poppa Dad Briggs</td>
+                                                <td>MyEmail@Emails.com</td>
+                                                <td>647-555-1234</td>
+                                                <td>416-555-1234</td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" /></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- /.table-responsive -->
+                            </div>
+                            <!-- /.panel-body -->
+                        </div>
+                        <!-- /.panel -->
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <!-- /.row -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                Add New First Family Alert Contacts
+                            </div>
+                            <!-- /.panel-heading -->
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>E-Mail</th>
+                                                <th>Mobile Phone</th>
+                                                <th>Home Phone</th>
+                                                <th>Family Circle</th>
+                                                <th>Extended Family Circle</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr class="gradeA">
+                                                <td><input class="FamilyInput" id="Name" type="text" /></td>
+                                                <td><input class="FamilyInput" id=" username" type="text" /></td>
+                                                <td><input class="FamilyInput" id="Phone" type="text" /></td>
+                                                <td><input class="FamilyInput" id="Email" type="text" /></td>
+                                                <td class="center"><input id="isFamilyChck" type="checkbox" checked="checked" /></td>
+                                                <td class="center"><input id="isFriendChck" type="checkbox" checked="checked" /></td>
+                                            </tr>
+                                            <tr class="gradeA">
+                                                <td><input id="Add" class="FamilyInput" type="button" value="Add" /></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- /.row -->
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Organization Circles you Subscribe to:
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Organization</th>
+                                                            <th>Receive Notifications</th>
+                                                            <th>Remove</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>City of Toronto</td>
+                                                            <td>&nbsp;&nbsp;Yes<input id="Yes" name="receive" type="radio" />&nbsp;&nbsp; No<input id="No" name="receive" type="radio" /></td>
+                                                            <td><input id="Remove" type="button" value="Remove" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Darlington Nuclear Power</td>
+                                                            <td>&nbsp;&nbsp;Yes<input id="Yes" name="receive1" type="radio" />&nbsp;&nbsp; No<input id="No" name="receive1" type="radio" /></td>
+                                                            <td><input id="Remove" type="button" value="Remove" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>St. Alberts Catholic School</td>
+                                                            <td>&nbsp;&nbsp;Yes<input id="Yes" name="receive2" type="radio" />&nbsp;&nbsp; No<input id="No" name="receive2" type="radio" /></td>
+                                                            <td><input id="Remove" type="button" value="Remove" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Centennial College</td>
+                                                            <td>&nbsp;&nbsp;Yes<input id="Yes" name="receive3" type="radio" />&nbsp;&nbsp; No<input id="No" name="receive3" type="radio" /></td>
+                                                            <td><input id="Remove" type="button" value="Remove" /></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- /.table-responsive -->
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading">
+                                            Suggested Organizations:
+                                        </div>
+                                        <!-- /.panel-heading -->
+                                        <div class="panel-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-striped table-bordered table-hover">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>#</th>
+                                                            <th>Organization</th>
+                                                            <th>Visit Website</th>
+                                                            <th>Add</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Province of Ontario</td>
+                                                            <td><a href="https://www.ontario.ca/welcome-ontario">Click Here to visit the website</a></td>
+                                                            <td><input id="Add" type="button" value="Add" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Government of Canada</td>
+                                                            <td><a href="http://www.canada.ca/en/">Click Here to visit the website</a></td>
+                                                            <td><input id="Add" type="button" value="Add" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3</td>
+                                                            <td>Toronto Police</td>
+                                                            <td>
+                                                                <a href="http://www.torontopolice.on.ca/">Click Here to visit the website</a>
+                                                            </td>
+                                                            <td><input id="Add" type="button" value="Add" /></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>4</td>
+                                                            <td>Pickering Nuclear Power</td>
+                                                            <td>
+                                                                <a href="http://www.opg.com/generating-power/nuclear/stations/pickering-nuclear/Pages/pickering-nuclear.aspx">Click Here to visit the website</a>
+                                                            </td>
+                                                            <td><input id="Add" type="button" value="Add" /></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <!-- /.table-responsive -->
+                                        </div>
+                                        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+
+
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-6 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /#page-wrapper -->
+
+            </div>
+    <!-- /#wrapper -->
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="js/plugins/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="js/plugins/dataTables/dataTables.bootstrap.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+        $(document).ready(function () {
+            $('#dataTables-example').dataTable();
+        });
+    </script>
+
+</body>
+
+</html>
